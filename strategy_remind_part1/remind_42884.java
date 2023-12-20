@@ -1,14 +1,16 @@
-package strategy_day7_part5;
+package strategy_remind_part1;
 
-import java.util.Comparator;
 import java.util.Arrays;
+import java.util.Comparator;
 
 /**
- * strategy_42884
+ * remind_42884
  * [탐욕법(Greedy)] 단속카메라
  */
-public class strategy_42884 {
+public class remind_42884 {
     public int solution(int[][] routes) {
+        // 끝 지점으로 정렬해야 단속 카메라 위치를 증가시키며 확인할 수 있다
+        // 결국 끝 지점에 설치된 카메라가 최소 설치 수 이다.
         Arrays.sort(routes, Comparator.comparingInt(route -> route[1]));
 
         int count = 0;
