@@ -44,4 +44,9 @@ public class remind_43162 {
         // 위 과정을 마무리 후 네트워크 수 리턴
         return answer;
     }
+    
+    public static void main(String[] args) {
+        new remind_43162().solution(0, null);
+        System.out.println("여기야 43162!!");
+    }
 }
