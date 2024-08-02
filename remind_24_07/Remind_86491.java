@@ -1,4 +1,4 @@
-package remind_240731;
+package remind_24_07;
 
 public class Remind_86491 {
     public int solution(int[][] sizes) {

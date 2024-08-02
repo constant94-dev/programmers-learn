@@ -1,4 +1,4 @@
-package remind_240731;
+package remind_24_07;
 
 import java.util.ArrayList;
 import java.util.Arrays;
