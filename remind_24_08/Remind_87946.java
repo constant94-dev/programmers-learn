@@ -23,7 +23,7 @@ public class Remind_87946 {
          * */
         int dungeonLength = dungeons.length;
         for (int i=0; i<dungeonLength; i++){
-            System.out.println("visited: "+ Arrays.toString(visited) + "\tcount: "+count);
+            System.out.println("현재 던전 행: "+i+"\tvisited: "+ Arrays.toString(visited) + "\tcount: "+count);
             if (visited[i] || k < dungeons[i][0]) continue;
 
             visited[i] = true; // 현재 던전 탐험 표시
