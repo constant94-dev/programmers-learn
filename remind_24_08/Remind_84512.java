@@ -20,12 +20,11 @@ public class Remind_84512 {
         // 재귀 사용
         // 시작 값: 만들어야 할 시작 단어
         // 종료 조건: 단어 길이가 5일 경우 return
-        // 점화식 (점차적으로 종료에 가까워지는 식)
-        // 시작 단어에 모음 하나 붙인 값, 현재 조합한 단어 길이
+        // 점화식 (점차적으로 종료에 가까워지는 식): (시작 단어에 모음 하나 붙인 값, 현재 조합한 단어 길이)
         if (length >= 5) return;
 
-        for (String s : vowel) {
-            final String generate = alpha + s;
+        for (String v : vowel) {
+            final String generate = alpha + v;
             dics.add(generate);
             makeToDictionary(generate, length+1);
         }
